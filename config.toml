@@ -1,5 +1,7 @@
 # The URL the site will be built for
 base_url = "https://codestat.dev"
+title = "CodeStat"
+description = "Reprogram your life!"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
