@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://127.0.0.1:1111/</loc>
+        <loc>codestat.dev/</loc>
+    </url>
+    <url>
+        <loc>codestat.dev/blog/</loc>
+    </url>
+    <url>
+        <loc>codestat.dev/blog/you-have-to-be-smart/</loc>
+        <lastmod>2020-11-08</lastmod>
+    </url>
+    <url>
+        <loc>codestat.dev/stats/</loc>
+    </url>
+    <url>
+        <loc>codestat.dev/stats/research-your-battles/</loc>
+        <lastmod>2020-11-12</lastmod>
     </url>
 </urlset>
