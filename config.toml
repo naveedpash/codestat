@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://codestat.dev"
+base_url = "codestat.dev"
 title = "CodeStat"
 description = "Reprogram your life!"
 
@@ -13,10 +13,12 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+# Generate Atom 1.0 XML Feed
+generate_feed = true
+
 # Theme
 theme = "hyde"
 
 [extra]
 # Put all your custom variables here
 hyde_theme = "theme-base-08"
-hyde_reverse = true
