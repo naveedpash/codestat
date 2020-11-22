@@ -1,0 +1,16 @@
+{% extends "hyde/templates/index.html" %}
+
+{% block sidebar_nav %}
+  {% set blog_section = get_section(path="blog/_index.md") %}
+  {% set blog_section_url = get_url(path="@/blog/_index.md") %}
+  <li class="sidebar-nav-item"><a href="{{ blog_section_url }}">{{ blog_section.title }}</a></li>
+
+  {% set stats_section = get_section(path="stats/_index.md") %}
+  {% set stats_section_url = get_url(path="@/stats/_index.md") %}
+  <li class="sidebar-nav-item"><a href= "{{ stats_section_url }}">{{ stats_section.title }}</a></li>
+  <!--
+  {% for link in config.extra.hyde_links %}
+    <li class="sidebar-nav-item"><a href="{{link.url}}">{{link.name}}</a></li>
+  {% endfor %}
+  -->
+{% endblock sidebar_nav %}
