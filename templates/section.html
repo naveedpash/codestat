@@ -1,5 +1,8 @@
 {% extends "index.html" %}
 
+
 {% block content %}
-<h2>{{ section.description }}</h2>
+  <h2>{{ section.description }}</h2>
+  {{ section.toc }}
+  {{ section.content | safe }}
 {% endblock content %}
