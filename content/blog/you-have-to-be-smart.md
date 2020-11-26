@@ -3,23 +3,29 @@ title = "'You have to be smart.'"
 description = "Working smart just to work hard"
 date = 2020-11-08
 template = "page.html"
+[taxonomies]
+category = ["Resident Life"]
 +++
 
-You have to be smart. This is the maxim on the tongue of many senior residents
-as they instruct our junior residents that working around obstacles and being
-determined is the best way to be a star resident. As it so happens. This may not
-always be the case. Usually they end up adding extra work. There is a workflow
-or worklist and they just add more steps than that workflow thinking that
-they're working smart to overcome obstacles, like a printer that doesn't work in
-one ward and I have to go and service itself in another ward.
+> 'You have to be smart.'
+> 
+> &mdash; Anonymous Resident
+
+This is the maxim on the tongue of many senior residents as they instruct our
+junior residents that working around obstacles and being determined is the
+best way to be a star resident. This post is about all those times when I
+thought this wasn't the case and what we should do about it
 
 Residents will exert themselves to develop workarounds for roadblocks to
-completing tasks necessary for everyday patient care. This is partly driven by
-the fact that attending consultants won't accept technical issues as a valid
-cause of failure to complete tasks essential to patient care which is valid on
-their part as well. However everyday tasks can become increasingly laborious as
-the number of workarounds continue to various roadblocks continue to increase
-in number.
+completing tasks necessary for everyday patient care. This is partly driven
+by the fact that attending consultants won't accept technical issues as a
+valid reason for failure to complete tasks essential to patient care. I don't
+think there is any blame on them for expecting such. However everyday tasks
+can become increasingly laborious as the number of workarounds to various
+roadblocks continue to increase in number.
+
+> Residents will exert themselves to develop workarounds for roadblocks to
+completing tasks necessary for everyday patient care.
 
 Let's consider the example of vital monitoring. There continue to exist a number
 of hospitals where vitals are recorded by hand on paper flowsheets. A doctor
