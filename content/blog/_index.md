@@ -1,6 +1,7 @@
 +++
-title = "Blog"
-description = "These are a collection of issues I've faced in my life that I suspect other surgical residents may also have experienced. I decided to put them to words."
+title = "Resident Life"
+description = "Annals of Surgical Resident"
 sort_by = "date"
-template = "section.html"
 +++
+
+Thematic journal of experiences that spanned my surgical residency and perhaps yours too...

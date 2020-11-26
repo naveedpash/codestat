@@ -1,13 +1,21 @@
 {% extends "hyde/templates/index.html" %}
 
-{% block sidebar_nav %}
-  {% set blog_section = get_section(path="blog/_index.md") %}
-  {% set blog_section_url = get_url(path="@/blog/_index.md") %}
-  <li class="sidebar-nav-item"><a href="{{ blog_section_url }}">{{ blog_section.title }}</a></li>
+{% block extra_head %}
+  <link rel="stylesheet" href="{{ get_url(path="index.css", trailing_slash=false) }}"
+{% endblock extra_head %}
 
-  {% set stats_section = get_section(path="stats/_index.md") %}
-  {% set stats_section_url = get_url(path="@/stats/_index.md") %}
-  <li class="sidebar-nav-item"><a href= "{{ stats_section_url }}">{{ stats_section.title }}</a></li>
+{% block sidebar_nav %}
+  {% set root = get_section(path="_index.md") %}
+  {% for subsection in root.subsections %}
+    {% set current_subsection = get_section(path=subsection) %}
+    <li class="sidebar-nav-item">
+      <a href="{{ current_subsection.permalink }}">{{ current_subsection.title }}</a>
+      <br />
+      <p class="sidebar-nav-subitem">{{ current_subsection.description }}</p>
+      </ul>
+    </li>
+  {% endfor %}
+
   <!--
   {% for link in config.extra.hyde_links %}
     <li class="sidebar-nav-item"><a href="{{link.url}}">{{link.name}}</a></li>
@@ -16,18 +24,5 @@
 {% endblock sidebar_nav %}
 
 {% block content %}
-  <div class="posts">
-    {% for page in section.pages | reverse %}
-      <div class="post">
-        <h1 class="post-title">
-          <a href="{{ page.permalink }}">
-            {{ page.title }}
-          </a>
-        </h1>
-
-        <span class="post-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
-        <p>{{ page.description | safe }}</p>
-      </div>
-    {% endfor %}
-  </div>
+  {{ section.content | safe }}
 {% endblock content %}

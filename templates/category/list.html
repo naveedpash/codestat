@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% block content %}
+    {% for term in terms %}
+        {{ term.name | safe }}
+    {% endfor %}
+    <hr />
+    {% set section = get_section(path="_index.md") %}
+    {% for subsection in section.subsections %}
+        {% set current_subsection = get_section(path=subsection) %}
+        {{ current_subsection.title | safe }}
+        <hr />
+    {% endfor %}
+{% endblock content %}
